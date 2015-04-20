@@ -8,8 +8,12 @@ module.exports = {
 require('./gulp/tasks/copy');
 require('./gulp/tasks/jade');
 require('./gulp/tasks/sass');
+require('./gulp/tasks/clean');
 
-gulp.task('default', ['copy', 'jade', 'sass']);
+gulp.task('build', ['copy', 'jade', 'sass']);
+gulp.task('default', ['clean'], function(){
+  gulp.start('build');
+});
 
 
 

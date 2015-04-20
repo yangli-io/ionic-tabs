@@ -4,6 +4,8 @@
 node_modules/
 platforms/
 plugins/
+platforms/
+hooks/
 www/
 .idea/
 bower_components/
